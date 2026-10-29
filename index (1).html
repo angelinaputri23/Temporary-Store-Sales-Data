@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f6fb">
+  <title>XMART | Store Operations Dashboard</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#f4f6fb;color:#17233b;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+    .shell{max-width:1180px;margin:0 auto;padding:42px 24px 56px}
+    .topline{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:68px}
+    .brand{font-size:13px;font-weight:850;letter-spacing:.16em;color:#4565e8}
+    .status{font-size:12px;font-weight:750;color:#3653c9;background:#e9edff;border-radius:30px;padding:10px 15px}
+    .intro{max-width:760px;margin-bottom:36px}
+    .eyebrow{font-size:12px;font-weight:800;letter-spacing:.15em;color:#4565e8;text-transform:uppercase}
+    h1{font-size:clamp(34px,6vw,58px);line-height:1.06;letter-spacing:-.045em;margin:12px 0 16px}
+    .lead{font-size:17px;line-height:1.7;color:#71809a;margin:0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:46px 0 17px}
+    .section-head h2{font-size:20px;margin:0}
+    .section-head p{font-size:13px;color:#71809a;margin:5px 0 0}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .card{display:flex;flex-direction:column;min-height:290px;padding:26px;background:#fff;border:1px solid #e5eaf3;border-radius:22px;box-shadow:0 12px 32px rgba(25,45,80,.055);text-decoration:none;color:inherit;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+    .card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(25,45,80,.1);border-color:#cbd5fa}
+    .icon{width:52px;height:52px;border-radius:15px;background:#edf1ff;color:#4565e8;display:grid;place-items:center;margin-bottom:24px}
+    .icon svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .card h3{font-size:22px;margin:0 0 9px;letter-spacing:-.02em}
+    .card p{font-size:14px;line-height:1.65;color:#71809a;margin:0;max-width:460px}
+    .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:19px}
+    .meta span{font-size:11px;font-weight:700;color:#53627c;background:#f2f4f8;padding:6px 9px;border-radius:20px}
+    .open{display:flex;align-items:center;gap:8px;color:#3653c9;font-weight:800;font-size:13px;margin-top:auto;padding-top:25px}
+    .open svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .footer{border-top:1px solid #e1e7f0;margin-top:54px;padding-top:20px;color:#8793a8;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media(max-width:720px){.shell{padding:25px 16px 38px}.topline{margin-bottom:48px}.cards{grid-template-columns:1fr}.card{min-height:260px}.section-head{margin-top:36px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topline">
+      <div class="brand">XMART <span style="color:#aab4c7">•</span> STORE OPERATIONS</div>
+      <div class="status">DASHBOARD PORTAL</div>
+    </header>
+
+    <section class="intro">
+      <div class="eyebrow">Store Operations Dashboard</div>
+      <h1>One place to monitor<br>store performance.</h1>
+      <p class="lead">Choose a dashboard below to explore inventory health, stock opportunities and points redemption activity across XMART.</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>Available dashboards</h2>
+          <p>Select a dashboard to get started.</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <a class="card" href="./Store-Stock-Promo-Planning/index.html">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9M15 9v12"/><path d="M7 6h.01M12 6h.01M17 6h.01"/></svg>
+          </div>
+          <h3>Store Stock &amp; Promo Planning</h3>
+          <p>Monitor available stock, safety-stock levels and product categories across the five official branches. Identify low-stock items and potential promotion opportunities.</p>
+          <div class="meta"><span>5 branches</span><span>14 official categories</span><span>Inventory</span></div>
+          <div class="open">Open dashboard
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+        </a>
+
+        <a class="card" href="./Redeemed-Points-Dashboard/index.html">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/><path d="M5 5h.01M19 19h.01"/></svg>
+          </div>
+          <h3>Redeemed Points Dashboard</h3>
+          <p>Review voucher redemption activity, points used, LELE marketplace deductions, redemption trends and transaction details.</p>
+          <div class="meta"><span>Voucher redemption</span><span>Points analysis</span><span>Transactions</span></div>
+          <div class="open">Open dashboard
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>XMART • Store Operations</span>
+      <span>More dashboards can be added to this portal later.</span>
+    </footer>
+  </main>
+</body>
+</html>
